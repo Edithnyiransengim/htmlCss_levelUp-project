@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+background-color:#1C1B3A ;
+}
+#home{
+    display: grid;
+    height:100vh;
+    width:100%;
+    background-color: rgb(29, 4, 68);
+    grid-template-columns: repeat(8,1fr);
+    grid-template-areas: "navigation navigation navigation navigation navigation navigation navigation navigation"
+                         "plugins plugins plugins plugins plugins plugins plugins plugins "
+                         "plugins plugins plugins plugins plugins plugins plugins plugins " 
+                         "name name name name  name image  image image"
+                         "name name name name name image image image "
+                         "paragraph paragraph paragraph paragraph  paragraph image image image "
+                         "button button button button button image image image"
+                         "button button button button button  image image image";
+ grid-template-rows:repeat(8,1fr);
+} 
+.navigation{
+    background-color: blueviolet;
+    grid-area: navigation;
+}
+.plugins{
+    background-color: rgb(226, 43, 134);
+    grid-area: plugins;
+}
+.image{
+    background-color: aqua;
+    grid-area: image;
+}
+.name{
+    background-color: azure;
+    grid-area: image;
+}
+.paragraph{
+    background-color: rgb(200, 255, 0);
+    grid-area: paragraph;
+}
+.button{
+    background-color: black;
+    grid-area: button;
+}
+
