@@ -13,17 +13,22 @@ background-color:#1C1B3A ;
     grid-template-columns: repeat(8,1fr);
     grid-template-areas: "navigation navigation navigation navigation navigation navigation navigation navigation"
                          "plugins plugins plugins plugins plugins plugins plugins plugins "
-                         "plugins plugins plugins plugins plugins plugins plugins plugins " 
-                         "name name name name  name image  image image"
-                         "name name name name name image image image "
-                         "paragraph paragraph paragraph paragraph  paragraph image image image "
+                         "plugins plugins plugins plugins plugins plugins plugins plugins "
+                         "name name name name  name image image image"
+                         "paragraph paragraph paragraph paragraph paragraph image image image "
+                         "paragraph paragraph paragraph paragraph paragraph image image image "
                          "button button button button button image image image"
-                         "button button button button button  image image image";
+                         "button button button button button image image image";
  grid-template-rows:repeat(8,1fr);
 } 
 .navigation{
     background-color: blueviolet;
     grid-area: navigation;
+    color: antiquewhite;
+    display: flex;
+    align-content: center;
+
+   
 }
 .plugins{
     background-color: rgb(226, 43, 134);
@@ -35,7 +40,7 @@ background-color:#1C1B3A ;
 }
 .name{
     background-color: azure;
-    grid-area: image;
+    grid-area: name;
 }
 .paragraph{
     background-color: rgb(200, 255, 0);
