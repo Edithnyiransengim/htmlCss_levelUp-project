@@ -15,20 +15,44 @@ background-color:#1C1B3A ;
                          "plugins plugins plugins plugins plugins plugins plugins plugins "
                          "plugins plugins plugins plugins plugins plugins plugins plugins "
                          "name name name name  name image image image"
-                         "paragraph paragraph paragraph paragraph paragraph image image image "
+                         "name name name name  name image image image"
                          "paragraph paragraph paragraph paragraph paragraph image image image "
                          "button button button button button image image image"
                          "button button button button button image image image";
  grid-template-rows:repeat(8,1fr);
 } 
 .navigation{
-    background-color: blueviolet;
+    background-color: rgb(35, 9, 100);
     grid-area: navigation;
     color: antiquewhite;
+    display: flex;   
+}
+.box1{
+    width: 10%;
+    list-style: none;
+}
+p{
+    color: antiquewhite;
+    font-size: 15px;
+    list-style: none;
+    padding-top: 25px;
+    margin-left: 30px;
+}
+.box2{
+    width: 90%;
+}
+ul{
     display: flex;
-    align-content: center;
-
-   
+    margin-left: 300px;
+    padding-left: 5vh;
+    color: antiquewhite;
+    
+}
+li{
+    list-style: none;
+    margin-left: 60px;
+    padding-top: 25px;
+    color: rgb(245, 242, 237);
 }
 .plugins{
     background-color: rgb(226, 43, 134);
@@ -39,13 +63,37 @@ background-color:#1C1B3A ;
     grid-area: image;
 }
 .name{
-    background-color: azure;
-    grid-area: name;
+    grid-area: name;       
+}
+.box3{
+    margin-top: 5vh;
+}
+p1{
+    color: antiquewhite;
+    font-size: 40px;
+    margin-left: 50px;
 }
 .paragraph{
     background-color: rgb(200, 255, 0);
     grid-area: paragraph;
+   
 }
+.box4{
+    background-color: #1b3a20;
+}
+p2{
+    line-height: 0.3em;
+    font-size: 20px;
+    color: antiquewhite; 
+    margin-left: 30px;
+    padding-top: 5px; 
+}
+p3{
+    color: antiquewhite; 
+    margin-left: 30px; 
+    word-spacing: 4px;
+ padding-bottom: 5px;
+} 
 .button{
     background-color: black;
     grid-area: button;
