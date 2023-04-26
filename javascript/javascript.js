@@ -28,28 +28,31 @@ let secondname="nyiransengimana";
 
 //else{
   //console.log("not allowed to drink beer")}
-  let n=1;
-  let n=2;
-  let n=3;
-  let n=4;
+ let n=1-10;
+ if(n>=1-10){
+  console.log("number is:",number)
+ }
 
-  let students=["ndizihiwe","kanyana","nyiransengimana","munezero","ishimwe"];
-  let studentsAge=[1,2,3,4,5,6]
-  let a=2;
-  let b=0;
-  let sum=studentsAge[a]+studentsAge[b]
-  if(a<studentsAge.length && b<studentsAge.length ){
-    console.log("go on");
-    console.log("student is:",students[sum]);
-  }
-   else{
-   console.log("nooo")
+
+
+
+  // let students=["ndizihiwe","kanyana","nyiransengimana","munezero","ishimwe"];
+  // let studentsAge=[1,2,3,4,5,6]
+  // let a=2;
+  // let b=0;
+  // let sum=studentsAge[a]+studentsAge[b]
+  // if(a<studentsAge.length && b<studentsAge.length ){
+  //   console.log("go on");
+  //   console.log("student is:",students[sum]);
+  // }
+  //  else{
+  //  console.log("nooo")
    
   
 
  // let sum = studentsAge[a] + studentsAge[b];
  // if(sum < students.length){
-   console.log("student is:",students[sum]);  }
+  // console.log("student is:",students[sum]);  }
  // else{
    // console.log("authentical failed") }
  
