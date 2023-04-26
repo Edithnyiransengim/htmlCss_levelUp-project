@@ -3,8 +3,8 @@
 //let,const //data
 //  (condition) {
 // }
-let firstname="edith";
-let secondname="nyiransengimana";
+// let firstname="edith";
+// let secondname="nyiransengimana";
 // if(firstname==="edith"){
 // console.log("corect!!!!")}
 // else{
@@ -28,11 +28,102 @@ let secondname="nyiransengimana";
 
 //else{
   //console.log("not allowed to drink beer")}
- let n=1-10;
- if(n>=1-10){
-  console.log("number is:",number)
- }
 
+  // let number=3;
+  // if(number===1){
+  //   console.log("one")
+  // }
+  // else if(number===2){
+  //   console.log("two")
+  // }
+  // else if(number===3){
+  //   console.log("three")
+  // }
+  // else if(number===4){
+  //   console.log("four")
+  // }
+  // else if(number===5){
+  //   console.log("five")
+  // }
+  // else if(number===6){
+  //   console.log("six")
+  // }
+  // else if(number===5){
+  //   console.log("five")
+  // }
+  // else if(number===6){
+  //   console.log("six")
+  // }
+  // else if(number===7){
+  //   console.log("seven")
+  // }
+  // else if(number===8){
+  //   console.log("eight")
+  // }
+  // else if(number===9){
+  //   console.log("nine")
+  // }
+  // else if(number===10){
+  //   console.log("ten")
+  // }
+  // else{
+  //   console.log("not included")
+  // }
+
+  // let numArray=["zero","two","three"];
+  let number=3;
+  if(number<number.length)
+  console.log(numArray[number])
+  // if(number<number.length){
+  //   console.log()
+  // }
+  
+  
+//   let claude=()=>{
+//     console.log("allowed to drink beer");
+//   }
+
+//   let ali=()=>{
+//     console.log("not allowed")
+//   }
+
+
+// let n=10;
+// if(n>=18){
+// claude();
+// }
+// else{
+//   ali();
+// }
+
+
+
+let checkAge=(age)=>{
+  if(age>18){
+    console.log("alowed");
+  }
+  else if(age<18){
+    console.log("not allowed");
+  }
+  else if(age<=18){
+    console.log("both");
+  }
+}
+checkAge(18);
+
+
+  // let numArray=["one","two","three"];
+  // let number=39;
+  // if(number<=10){
+  //   numArray.push("four");
+  //   console.log(numArray);
+  // }
+  // else{
+  //   numArray.pop();
+  //   console.log(numArray);
+  // }
+   
+   
 
 
 
