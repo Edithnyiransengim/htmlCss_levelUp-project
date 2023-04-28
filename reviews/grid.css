@@ -3,183 +3,193 @@
     padding: 0;
 }
 body{
-background-color:#1C1B3A ;
+    background-color: rgb(29, 29, 58);
 }
-#home{
-    display: grid;
-    height:100vh;
-    width:100%;
-    background-color: rgb(29, 4, 68);
-    grid-template-columns: repeat(8,1fr);
-    grid-template-areas: "navigation navigation navigation navigation navigation navigation navigation navigation"
-                         "plugins plugins plugins plugins plugins plugins plugins plugins "
-                         "plugins plugins plugins plugins plugins plugins plugins plugins "
-                         "name name name name  name image image image"
-                         "name name name name  name image image image"
-                         "paragraph paragraph paragraph paragraph paragraph image image image "
-                         "butt butt butt butt butt image image image"
-                         "butt butt butt butt butt image image image";
- grid-template-rows:repeat(8,1fr);
-} 
-.navigation{
-    background-color: rgb(35, 9, 100);
-    grid-area: navigation;
-    color: antiquewhite;
-    display: flex;
-    position: fixed; 
-    width: 100%;  
-    height: 14%;
+.container{
+    width: 100%;
+    background-color:rgb(29, 29, 58) ;
 }
-.box1{
-    width: 10%;
-    list-style: none;
-}
-p{
-    color: antiquewhite;
-    font-size: 15px;
-    list-style: none;
-    padding-top: 25px;
-    margin-left: 30px;
-}
-.box2{
-    width: 90%;
-}
-ul{
-    display: flex;
-    margin-left: 300px;
-    padding-left: 5vh;
-    color: antiquewhite;
-    
-}
-li{
-    list-style: none;
-    margin-left: 60px;
-    padding-top: 25px;
-    color: rgb(245, 242, 237);
-}
-.plugins{
-    background-color: rgb(226, 43, 134);
-    grid-area: plugins;
-}
-.image{
-    grid-area: image;
-}
-.name{
-    grid-area: name;       
-}
-.box3{
-    margin-top: 5vh;
-}
-p1{
-    color: antiquewhite;
-    font-size: 40px;
-    margin-left: 50px;
-}
-.paragraph{
-    grid-area: paragraph;
-    color: antiquewhite;
-    font-size: 20px;
-    text-align: justify; 
-    line-height: normal; 
-}
-.box4{
-    margin-left: 50px;
-    padding-bottom: 7vh;
-}
-.butt{
-    grid-area: butt;
-}
-button{
-    width:200px;
-    height: 70px;
-    margin-left: 100px;
-    border-radius: 20px;
-    background-color: rgb(206, 45, 45);
-    border-color: rgb(211, 60, 60);
-    color: antiquewhite;
-}
-button:hover{
-background-color: blueviolet;
-}
-#services{
-background-color: blue;
-width: 100%;
+.home{
 height: 100vh;
 }
-.image>img{
-    width:90%;
-    height: 90%;
-}
-#services{
-    background-color: #1C1B3A;
+.sub-container{
+    height: 100%;
     display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10,1fr);
+    grid-template-areas: "lg lg nav nav nav nav nav nav nav nav"
+                         "ic ic ic ic ic ic ic ic ic ic"
+                         "ic ic ic ic ic ic ic ic ic ic"
+                         "nam nam nam nam nam nam ph ph ph ph"
+                         "nam nam nam nam nam nam ph ph ph ph"
+                         "pa pa pa pa pa pa ph ph ph ph"
+                         "pa pa pa pa pa pa ph ph ph ph"
+                         "bu bu bu bu bu bu ph ph ph ph"
+                         "bu bu bu bu bu bu ph ph ph ph"
+                         "bu bu bu bu bu bu ph ph ph ph";
+}
+.logo{
+    width: 100vh;
+    position: fixed;
+    grid-area: lg;
+    display: flex;
+    padding: 25px;
+    justify-content: start;
+    align-items: center;
+    color: white;
+}
+.logo h2{
+    font-size: 20px;
+}
+.home1{
+    width: 100%;
+    position: fixed;
+    grid-area: nav; 
+}
+.navigation{
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.navigation > ul {
+display: flex;
+}
+.navigation ul li{
+    list-style: none;
+    
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons{
+    background-color: rgb(184, 114, 11);
+    grid-area: ic;
+}
+.name{
+
+    grid-area: nam;
+}
+.name h2{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 40px;
+    color: white;
+    font-size: 25px;
+}
+.paragraph{
+    grid-area: pa;
+}
+.paragraph p{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 40px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.photo{
+
+    grid-area: ph;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mypic{
+    padding: 2px;
+    height: 400px;
+    width: 400px;
+}
+.buttons{
+
+    grid-area: bu;
+    display: flex;
+    padding: 60px;
+
+}
+.port{
+    background-color: rgb(19, 19, 51);
+    color: white;
+    height: 60px;
+    width: 150px;
+    border-radius:60px ;
+}
+.youtube{
+    background-color: brown;
+    color: white;
+    height: 60px;
+    width: 150px;
+    border-radius:60px ;
+    margin-left:190px ;
+    text-shadow: none;
+}
+#service{
+    background-color: blue;
     width: 100%;
     height: 100vh;
+    display: grid;
     grid-template-columns: repeat(6,1fr);
     grid-template-areas: "serve serve serve serve serve serve"
-                         "Serve Serve Serve Serve Serve Serve "
-                         "parag parag parag parag parag parag"
-                         "rect1 rect1 rect2 rect2 rect3 rect3"
-                         "rect1 rect1 rect2 rect2 rect3 rect3"
-                         "rect4 rect4 rect5 rect5 rect6 rect6" 
-                         "rect4 rect4 rect5 rect5 rect6 rect6";
-    grid-template-rows:repeat(7,1fr)
-}
-.serve{
-    background-color: rgb(29, 175, 114);
-    grid-area: serve;
-    display: flex;  
-}
-p2{
-    color: aliceblue;
-    display: flex;
-    margin-left: 49%;
-    margin-top: 70px;
-}
-p3{
-    color: aliceblue;
-    display: flex;
-    margin-left: 49%;
-    margin-top: 90px;   
-}
+                        "myserve myserve myserve myserve myserve myserve"
+                        "par par par par par par  "
+                        "line line line line line line  "
+                        "rect rect rect rect rect rect"
+                        "rect rect rect rect rect rect"
+                        "rect rect rect rect rect rect"
+                        "rect rect rect rect rect rect";
+     grid-template-rows:(8,1fr)
+    } 
+    .serve{
+        background-color: aqua;
+        grid-area: serve;
+    }
+    .myserve{
+        background-color: brown;
+        grid-area: myserve;
+    }
+    .par{
+        background-color: rgb(0, 255, 98);
+        grid-area: par;
+    }
+    .line{
+        background-color: blueviolet;
+        grid-area: line;
+    }
+    .rect{
+        background-color: brown;
+        grid-area: rect;
 
-.parag{
-    background-color: blueviolet;
-    grid-area: parag;
-}
-.rect1{
-    background-color: blue;
-    grid-area: rect1;
-    border-radius: 20px;
-}
-.rect2{
-    background-color: bisque;
-    grid-area: rect2;
-    border-radius: 20px;
-
-}
-.rect3{
-    background-color: #1C1B3A;
-    grid-area: rect3;
-    border-radius: 20px;
-}
-.rect4{
-    background-color: aqua;
-    grid-area: rect4;
-    border-radius: 20px;
-}
-.rect5{
-    background-color: blue;
-    grid-area: rect5;
-    border-radius: 20px;
-}
-.rect6{
-    background-color: blueviolet;
-    grid-area: rect6;
-    border-radius: 20px;
-}
+    }
+    /* .rect1{
+        background-color: rgb(211, 16, 97);
+        grid-area:rect1 ;
+    }
+    .rect2{
+        background-color: brown;
+        grid-area: rect2;
+    }
+    .rect3{
+        background-color: aquamarine;
+        grid-area: rect3;
+    }
+    .rect4{
+        background-color: rgb(167, 95, 8);
+        grid-area: rect4;
+    } */
 
 
 
 
 
+
+
+
+
+                  

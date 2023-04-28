@@ -72,8 +72,8 @@
 
   // let numArray=["zero","two","three"];
   let number=3;
-  if(number<number.length)
-  console.log(numArray[number])
+  if(number<numArray.length)
+  console.log(numArray[number-1])
   // if(number<number.length){
   //   console.log()
   // }
