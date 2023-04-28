@@ -70,13 +70,23 @@
   //   console.log("not included")
   // }
 
-  // let numArray=["zero","two","three"];
-  let number=3;
-  if(number<numArray.length)
-  console.log(numArray[number-1])
-  // if(number<number.length){
-  //   console.log()
+  //  let numArray=["zero","one","two","three"];
+  // let number=1;
+  // if(number<numArray.length)
+  // console.log(numArray[number]);
+  // else{
+  //   console.log("not considered")
   // }
+//   let number = 1;
+//  let numArray=["one","two","three"];
+//    if(number<number.length){
+//     console.log(numArray[number-1])
+//    }
+//    else{
+//     console.log("not consider")
+//    }
+    
+  
   
   
 //   let claude=()=>{
@@ -95,21 +105,77 @@
 // else{
 //   ali();
 // }
+// let functionName=(parameter)=>{
+
+// }
+// //output();
+// function parameter
+
+// let man=(age)=>{
+//   if(age<18){
+//     console.log("allowed");
+//   }
+//  else (age>18){
+//     console.log("die");
+//   }
+let num=["zero","one","two","three","four","five","six"];
+let number=(num)=>{
+  if(number<num.length){
+    return num;
+  } 
+  else{
+    console.log("noooo")   
+  }
+  
+ console.log(num[8]);
+  
 
 
 
-let checkAge=(age)=>{
-  if(age>18){
-    console.log("alowed");
-  }
-  else if(age<18){
-    console.log("not allowed");
-  }
-  else if(age<=18){
-    console.log("both");
-  }
-}
-checkAge(18);
+
+//
+
+// let man=(age)=>{
+//   if(age>0){
+//     if(age>18){
+//       console.log("allowed")
+//     }
+//     else{
+//       console.log("not allowed")
+// }
+//   }
+// else{
+//   console.log("does not exist")
+// }
+// }
+// man(19);
+// let output=(name)=>{  
+// if(name==="edith"){
+//   window.alert("not me") 
+//   return console.log();
+// }
+// console.log("hjfhdjhjhj");
+// console.log("hhhhhhhhhhhhh")
+// }
+// output();
+
+
+
+
+
+
+// let checkAge=(age)=>{
+//   if(age>18){
+//     console.log("alowed");
+//   }
+//   else if(age<18){
+//     console.log("not allowed");
+//   }
+//   else if(age<=18){
+//     console.log("both");
+//   }
+// }
+// checkAge(18);
 
 
   // let numArray=["one","two","three"];
