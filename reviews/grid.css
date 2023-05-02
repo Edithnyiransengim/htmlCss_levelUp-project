@@ -8,6 +8,7 @@ body{
 .container{
     width: 100%;
     background-color: rgb(29, 29, 58);
+    
 }
 .home{
 height: 100vh;
@@ -421,25 +422,27 @@ i:hover{
 #portfolio{
     background-color: rgb(15, 15, 73);
     width:100%;
-    height: 140vh;
+    height: 130vh;
     display: grid;
     grid-template-columns: repeat(7,1fr);
     grid-template-areas:    "por por por por por por por "
                             "sho sho sho sho sho sho sho "
                             "pr pr pr pr pr pr pr  "
                             "lg lg lg lg lg lg lg  "
-                            "pt1 pt1  pt2 pt2 pt2  pt3 pt3"
-                            "pt1 pt1  pt2 pt2 pt2  pt3 pt3 "
-                            "pt1 pt1  pt2 pt2 pt2  pt3 pt3"
-                            "pt4 pt4  pt2 pt2 pt2  pt6 pt6"
-                            "pt4 pt4  pt2 pt2 pt2  pt6 pt6 "
-                            "pt4 pt4  pt5 pt5 pt5  pt6 pt6 "
-                            "pt7 pt7  pt5 pt5 pt5  pt6 pt6" 
-                            "pt7 pt7  pt5 pt5 pt5  pt8 pt8"
-                            "pt7 pt7  pt5 pt5 pt5  pt8 pt8 ";
+                            "pt  pt  pt pt pt pt pt"
+                            "pt  pt  pt pt pt pt pt"
+                            "pt  pt  pt pt pt pt pt"
+                            "pt  pt  pt pt pt pt pt"
+                            "pt  pt  pt pt pt pt pt"
+                            "pt  pt  pt pt pt pt pt"
+                            "pt  pt  pt pt pt pt pt"
+                            "pt  pt  pt pt pt pt pt"
+                            "pt  pt  pt pt pt pt pt";
      grid-template-rows:repeat(13,1fr)                                               
 }
+
 .por{
+    background-color: blueviolet;
     grid-area: por;
 }
 .por h1{
@@ -452,6 +455,7 @@ i:hover{
  padding: 20px;
 }
 .sho{
+    background-color: aqua;
     grid-area: sho;
 }
 .sho h1{
@@ -463,6 +467,7 @@ i:hover{
     align-items: center;   
 }
 .pr{
+    background-color: brown;
     grid-area: pr;
 }
 .pr p{
@@ -480,6 +485,7 @@ i:hover{
     margin-top: 20px;
 }
 .lg{
+    background-color: aqua;
     grid-area: lg;
     display: flex;
     justify-content: center;
@@ -509,69 +515,56 @@ i:hover{
 .lg button:hover{
     color: rgb(228, 80, 87);
 }
+.pt{
+display: grid;
+background-color: rgb(4, 4, 56);
+grid-template-columns: repeat(7,1fr);
+grid-template-rows:repeat(9,1fr) ;
+grid-template-areas: "pt1 pt1 pt2 pt2 pt2 pt3 pt3"
+                     "pt1 pt1 pt2 pt2 pt2 pt3 pt3"
+                     "pt1 pt1 pt2 pt2 pt2 pt3 pt3"
+                     "pt4 pt4 pt2 pt2 pt2 pt6 pt6"
+                     "pt4 pt4 pt5 pt5 pt5 pt6 pt6"
+                     "pt7 pt7 pt5 pt5 pt5 pt6 pt6"
+                     "pt7 pt7 pt5 pt5 pt5 pt6 pt6"
+                     "pt7 pt7 pt5 pt5 pt5 pt8 pt8"
+                     "pt7 pt7 pt5 pt5 pt5 pt8 pt8";
+                    }
 .pt1{
-    background-color: blueviolet;
+    background-color: rgb(43, 144, 226);
     grid-area: pt1;
-    background-color: black;
-    padding: 10px;
-    border-radius: 15px;
-    margin-top: 10px;
 }
 .pt2{
     grid-area: pt2;
-    padding: 10px;
-    border-radius: 15px;
-    margin-top: 10px;
+    background-color: blueviolet;
 }
-.pt2 img{
-    width: 100%;
-    height: 100vh;
-}
+
 .pt3{
     grid-area: pt3;
-    padding: 10px;
-    border-radius: 15px;
-    margin-top: 10px;
+background-color: aqua;
 }
 .pt4{
     grid-area: pt4;
     background-color: rgb(58, 48, 48);
-    padding: 10px;
-    border-radius: 15px;
-    margin-top: 10px;
 }
 .pt5{
     grid-area: pt5;
-    padding: 10px;
-    border-radius: 15px;
-    margin-top: 10px;
-   
+   background-color: brown;  
 }
-.pt5 img{
-    width: 100%;
-    height: 100vh;
-}
+
 .pt6{
     grid-area: pt6;
     background-color:rgb(134, 133, 123) ;
-    padding: 10px;
-    border-radius: 15px;
-    margin-top: 10px;
+ 
 }
 .pt7{
     grid-area: pt7;
-    padding: 10px;
-    border-radius: 15px;
-    margin-top: 10px;
 }
 .pt8{
     grid-area: pt8;
-    padding: 10px;
-    border-radius: 15px;
-    margin-top: 10px;
-}
+    background-color: blue;
+} 
 #contact{
-    background-color: rgb(6, 6, 82);
     width: 100%;
     height: 130vh;
     display: grid;
@@ -590,57 +583,171 @@ i:hover{
                          
 }
 .any{
-    background-color: blueviolet;
     grid-area: any;
 }
+.any h5{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
 .cont{
-    background-color: rgb(43, 226, 52);
     grid-area: cont;
 }
+.cont h2{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;   
+}
 .prg{
-    background-color: rgb(61, 43, 226);
     grid-area: prg;
 }
+.prg p{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 20px; 
+    font-family: 'Courier New', Courier, monospace;
+}
 .lgn{
-    background-color: rgb(226, 43, 134);
     grid-area: lgn;
+     display: flex;
+     justify-content: center;
+     align-items: center;
 }
 .locate{
-    background-color: rgb(43, 137, 226);
     grid-area: locate;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    padding: 50px;
+    background-color: rgb(9, 9, 71);
+    border-radius: 20px;
+}
+.locate p{
+   
+    margin-left: 30px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.locate i{
+    width: 5rem;
+    color: brown;
+  
 }
 .call{
-    background-color: rgb(226, 131, 43);
     grid-area: call;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    padding: 40px;
+    background-color: rgb(9, 9, 71);
+    border-radius: 20px;
+}
+.call p{
+    margin-left: 30px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;  
 }
 .get{
-    background-color: blueviolet;
     grid-area: get;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    padding: 40px;
+    background-color: rgb(9, 9, 71);
+    border-radius: 20px;
+}
+.get p{
+    margin-left: 30px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace; 
 }
 .yourN{
-    background-color: rgb(174, 43, 226);
     grid-area: yourN;
+    color: white;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 40px; 
+    background-color: rgb(9, 9, 71);
+    border-radius: 20px;
 }
 .yourE{
-    background-color: rgb(55, 43, 226);
     grid-area: yourE;
+    color: white;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 40px; 
+    background-color: rgb(9, 9, 71);
+    border-radius: 20px;
 }
 .yourS{
-    background-color: rgb(226, 43, 119);
     grid-area: yourS;
+    color: white;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 40px; 
+    background-color: rgb(9, 9, 71);
+    border-radius: 20px;
 }
 .yourM{
-    background-color: rgb(43, 226, 98);
     grid-area: yourM;
+    color: white;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 40px; 
+    background-color: rgb(6, 6, 41); 
 }
 .send{
-    background-color: aqua;
     grid-area: send;
+}
+.send button{
+    width: 150px;
+    height: 60px;
+    padding: 20px; 
+    border-radius: 10px;
+    margin-left: 30px;
+    color: white;
+    background-color: brown;
+    border: 3px solid rgb(148, 76, 76);
+    border-style: none;
+}
+.send i{
+    font-size: 2rem;
+    color: white;
+    padding:10px;
+    margin-left: 60px;
+    border-radius: 100%;
+}
+.container h3{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.container p{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 20px;  
 }
 
 
 
-
+ 
 
 
 
