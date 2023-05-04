@@ -118,16 +118,36 @@
 //  else (age>18){
 //     console.log("die");
 //   }
-let num=["zero","one","two","three","four","five","six"];
-let number=(num)=>{
-  if(number<num.length){
-    return num;
-  } 
-  else{
-    console.log("noooo")   
-  }
-  
- console.log(num[8]);
+
+
+// let num=["zero","one","two","three","four","five","six"];
+// let number=(num)=>{
+//     return num;
+//   } 
+//    console.log(number(num));
+
+//    console.log("hii there")   
+
+   
+// let num=["zero","one","two","three","four","five","six"];
+//   for(let i=0;i<3;i++){
+//     console.log("i:",i);
+//     console.log("yes");
+//   }
+// let objectArray=[{"firstName":"axcel","age":20},{"firstName":"edith","age":17},{"firstName":"kanyana","age":18},{"firstName":"grace","age":16}]
+// let filteredArray=objectArray.filter((item) => item.age === 17);
+// console.log("name:",filteredArray);
+
+// Map
+// let array=[1,2,3,4,5,6,75,45];
+// let mapedArray=array.map((item)=>{});
+// console.log("mappedArray is:",mappedArray);
+
+let numbers = [1, 2, 3, 4,5,6,75,45];
+let newArr = numbers.map((item)=>item===)
+
+
+
   
 
 

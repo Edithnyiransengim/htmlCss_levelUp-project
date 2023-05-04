@@ -15,7 +15,8 @@ height: 100vh;
 background-color: rgb(29, 29, 58);
 }
 .sub-container{
-    height: 100%;
+    height: 100vh;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10,1fr);
@@ -57,7 +58,6 @@ background-color: rgb(29, 29, 58);
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 a{
     text-decoration: none;
@@ -73,6 +73,9 @@ display: flex;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.navigation:hover{
+    color: brown;
 }
 .icons{
 
@@ -417,12 +420,57 @@ i:hover{
     background-color: brown;
     color: white;
     border-radius: 20px;
- border-style: none;
+    border-style: none;
 }
+
+#skills{
+    background-color: rgb(18, 18, 66);
+    display:grid;
+    width:100%;
+    height: 140vh;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-areas: "exp exp exp exp exp exp"
+                         "let let let let let let"
+                         "let let let js js js"
+                         "let let let pyt pyt pyt"
+                         "pp pp pp lar lar lar"
+                         "pp pp pp seo seo seo"
+                         "hire hire hire hire hire hire";
+    grid-template-rows:repeat(7,1fr);   
+}
+.exp{
+    background-color: aqua;
+    grid-area: exp;
+}
+.let{
+    background-color: blueviolet;
+    grid-area: let;
+}
+.js{
+    background-color: brown;
+    grid-area: js;
+}
+.pyt{
+    background-color: blue;
+    grid-area: pyt;
+}
+.pp{
+    background-color: aqua;
+    grid-area: pp;
+}
+.seo{
+    background-color: blueviolet;
+    grid-area: seo;
+}
+.hire{
+    background-color: brown;
+    grid-area: hire;
+}
+
 #portfolio{
     background-color: rgb(15, 15, 73);
     width:100%;
-    height: 130vh;
+    height: 140vh;
     display: grid;
     grid-template-columns: repeat(7,1fr);
     grid-template-areas:    "por por por por por por por "
@@ -441,8 +489,8 @@ i:hover{
      grid-template-rows:repeat(13,1fr)                                               
 }
 
-.por{
-    background-color: blueviolet;
+
+ .por{
     grid-area: por;
 }
 .por h1{
@@ -455,7 +503,6 @@ i:hover{
  padding: 20px;
 }
 .sho{
-    background-color: aqua;
     grid-area: sho;
 }
 .sho h1{
@@ -467,7 +514,6 @@ i:hover{
     align-items: center;   
 }
 .pr{
-    background-color: brown;
     grid-area: pr;
 }
 .pr p{
@@ -485,24 +531,14 @@ i:hover{
     margin-top: 20px;
 }
 .lg{
-    background-color: aqua;
     grid-area: lg;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.lg h5{
-    color: white;
-    font-size: 20px;
-    display: flex;
-    padding: 30px;
-}
-.lg h5:hover{
-    color: brown;
-}
 .lg button{
-    width: 100px;
-    height: 40px;
+    width: 110px;
+    height: 50px;
     border-style: none;
     display: start;
     border-radius: 10px;
@@ -510,13 +546,29 @@ i:hover{
     background-color: rgb(19, 19, 85);
     color: white;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 15px;
+    font-size: 13px;
 }
 .lg button:hover{
-    color: rgb(228, 80, 87);
+    color: rgb(228, 80, 87); 
+    background-color: brown;
+} 
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    padding: 30px;
+}
+li:hover{
+    color: brown;
+    background-color: brown;
+    border-radius: 100%;
 }
 .pt{
 display: grid;
+grid-area: pt;
 background-color: rgb(4, 4, 56);
 grid-template-columns: repeat(7,1fr);
 grid-template-rows:repeat(9,1fr) ;
@@ -531,39 +583,94 @@ grid-template-areas: "pt1 pt1 pt2 pt2 pt2 pt3 pt3"
                      "pt7 pt7 pt5 pt5 pt5 pt8 pt8";
                     }
 .pt1{
-    background-color: rgb(43, 144, 226);
+    background-color: black;
     grid-area: pt1;
+    border-radius: 20px;
+    padding: 20px;
+    margin-left: 20px;
 }
 .pt2{
     grid-area: pt2;
-    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 20px;
+    margin-left: 20px;
+}.pt2 img{
+    width: 100%;
+    height: 10%px;
 }
-
 .pt3{
-    grid-area: pt3;
-background-color: aqua;
+grid-area: pt3;
+display: flex;
+justify-content: center;
+border-radius: 20px;
+padding: 20px;
+margin-left: 20px;
+}
+.pt3 img{
+    width: 100%;
+    height: 100%;
 }
 .pt4{
     grid-area: pt4;
     background-color: rgb(58, 48, 48);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 .pt5{
     grid-area: pt5;
-   background-color: brown;  
+   border-radius: 20px;
+   padding: 20px; 
+   display: flex;
+    justify-content: center; 
+    margin-left: 20px;
+}
+.pt5 img{
+    width: 100%;
+    height: 100%;
 }
 
 .pt6{
     grid-area: pt6;
     background-color:rgb(134, 133, 123) ;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
  
 }
 .pt7{
     grid-area: pt7;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+
+}
+.pt7 img{
+    width: 100%;
+    height: 100%;
 }
 .pt8{
     grid-area: pt8;
-    background-color: blue;
-} 
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+}
+.pt8 img{
+    width: 100%;
+    height: 100%;  
+}
 #contact{
     width: 100%;
     height: 130vh;
@@ -626,7 +733,6 @@ background-color: aqua;
     justify-content: start;
     align-items: start;
     padding: 50px;
-    background-color: rgb(9, 9, 71);
     border-radius: 20px;
 }
 .locate p{
@@ -647,7 +753,6 @@ background-color: aqua;
     justify-content: start;
     align-items: start;
     padding: 40px;
-    background-color: rgb(9, 9, 71);
     border-radius: 20px;
 }
 .call p{
@@ -662,7 +767,6 @@ background-color: aqua;
     justify-content: start;
     align-items: start;
     padding: 40px;
-    background-color: rgb(9, 9, 71);
     border-radius: 20px;
 }
 .get p{
@@ -677,7 +781,6 @@ background-color: aqua;
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
     padding: 40px; 
-    background-color: rgb(9, 9, 71);
     border-radius: 20px;
 }
 .yourE{
@@ -686,7 +789,6 @@ background-color: aqua;
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
     padding: 40px; 
-    background-color: rgb(9, 9, 71);
     border-radius: 20px;
 }
 .yourS{
@@ -695,7 +797,6 @@ background-color: aqua;
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
     padding: 40px; 
-    background-color: rgb(9, 9, 71);
     border-radius: 20px;
 }
 .yourM{
@@ -703,8 +804,7 @@ background-color: aqua;
     color: white;
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
-    padding: 40px; 
-    background-color: rgb(6, 6, 41); 
+    padding: 40px;  
 }
 .send{
     grid-area: send;
@@ -743,6 +843,9 @@ background-color: aqua;
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
     margin-left: 20px;  
+}
+.container h5{
+    color: brown;
 }
 
 
