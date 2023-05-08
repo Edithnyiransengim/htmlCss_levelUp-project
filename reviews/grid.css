@@ -109,7 +109,7 @@ i:hover{
     padding: 40px;
     color: white;
     font-size: 25px;
-}
+} 
 .paragraph{
     grid-area: pa;
 }
@@ -300,6 +300,7 @@ i:hover{
         background-color: brown;
     }
     #about{
+        background-color: rgb(12, 2, 70);
         height: 100vh;
         width: 100%;
         display: grid;
@@ -426,8 +427,9 @@ i:hover{
 #skills{
     background-color: rgb(18, 18, 66);
     display:grid;
+    grid-gap: 10px;
     width:100%;
-    height: 140vh;
+    height: 100vh;
     grid-template-columns: repeat(6,1fr);
     grid-template-areas: "exp exp exp exp exp exp"
                          "let let let let let let"
@@ -441,6 +443,12 @@ i:hover{
 .exp{
     background-color: aqua;
     grid-area: exp;
+}
+.exp h5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 .let{
     background-color: blueviolet;
@@ -472,6 +480,7 @@ i:hover{
     width:100%;
     height: 140vh;
     display: grid;
+    grid: gap 10px;
     grid-template-columns: repeat(7,1fr);
     grid-template-areas:    "por por por por por por por "
                             "sho sho sho sho sho sho sho "

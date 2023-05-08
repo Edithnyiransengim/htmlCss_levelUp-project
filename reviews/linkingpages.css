@@ -1,0 +1,169 @@
+
+
+
+*{
+margin: 0;
+padding: 0;
+}
+body{
+background-color: rgb(227, 235, 235);
+}
+#container{
+display: grid;
+width: 100%;
+height: 140vh;
+grid-template-columns: repeat(5,1fr);
+grid-template-rows: repeat(11,1fr);
+grid-template-areas: "login login login login login"
+                     "empty empty empty empty empty"
+                     "sign sign sign sign sign"
+                     "par par par par par"
+                     "youruse youruse youruse youruse youruse"
+                     "entu entu entu entu entu"
+                     "yourpass yourpass yourpass yourpass yourpass"
+                     "entp entp entp entp entp"
+                     "rememb rememb rememb rememb rememb"
+                     "log log log log log"
+                     "not not not not not";
+}
+.login{
+grid-area: login;
+background-color: rgb(5, 105, 43);
+width: 100%;
+}
+.login h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    
+}
+.empty{
+    grid-area: empty;
+    background-color: rgb(95, 197, 197);
+    width: 100%;
+}
+.sign{
+grid-area: sign;
+background-color: rgb(28, 102, 199);
+width: 80%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 90px;
+}
+.sign h2{
+    color: white; 
+    padding-top: 10px;   
+}
+.par{
+    grid-area: par;
+    color: white;
+    font-size: 20px;background-color: rgb(28, 102, 199);
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 90px;
+}
+.youruse{
+grid-area: youruse;
+background-color: rgb(28, 102, 199);
+width: 80%;
+margin-left: 90px;
+}
+.youruse label{
+    color: aliceblue;
+    align-items: start;
+    justify-content:start;
+    padding: 180px;
+}
+.entu{
+    grid-area: entu;
+    background-color:rgb(28, 102, 199);
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 90px;
+}
+    input[type=text], input[type=password] {
+        width: 70%;
+        padding: 15px;
+        margin: 80px 0 22px 0;
+        display: inline-block;
+        border: none;
+}
+.yourpass{
+grid-area: yourpass;
+background-color: rgb(28, 102, 199);
+width: 80%;
+
+margin-left: 90px;
+}
+.yourpass label{
+    color: aliceblue;
+    align-items: start;
+    justify-content:start;
+    padding: 180px;
+    align-items: center;
+}
+.entp{
+    grid-area: entp;
+    background-color: rgb(28, 102, 199);
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 90px;
+}
+.rememb{
+grid-area: rememb;
+background-color: rgb(28, 102, 199);
+width: 80%;
+margin-left: 90px;
+display: flex;
+}
+.rememb i{
+display: flex;
+justify-content:start;
+align-items:start;
+margin-left: 16%;
+}
+.rememb p1{
+    margin-left: 50%;
+    color: aqua;
+}
+.rememb p{
+    color: antiquewhite;
+}
+.log{
+grid-area: log;
+background-color: rgb(28, 102, 199);
+width: 80%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 90px;
+}
+.log button{
+    width: 70%;
+    height: 65%;
+    background-color: black;
+    color: aliceblue;
+}
+.not{
+grid-area: not;
+background-color: rgb(28, 102, 199);
+width: 80%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 90px;
+}
+.not p{
+    color: aliceblue;
+    font-size: 15x;
+}
+

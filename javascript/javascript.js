@@ -15,6 +15,13 @@
 
 //else{
   //  console.log("incorect")}
+  // let a=1;
+  // if(a>=2){
+  //   console.log("pass");
+  // }
+  // else{
+  //   console.log("not");
+  // }
 
 //if("a===2"||a==="3"){
  //   console.log("yes");}
@@ -143,8 +150,7 @@
 // let mapedArray=array.map((item)=>{});
 // console.log("mappedArray is:",mappedArray);
 
-let numbers = [1, 2, 3, 4,5,6,75,45];
-let newArr = numbers.map((item)=>item===)
+
 
 
 
@@ -215,7 +221,7 @@ let newArr = numbers.map((item)=>item===)
 
   // let students=["ndizihiwe","kanyana","nyiransengimana","munezero","ishimwe"];
   // let studentsAge=[1,2,3,4,5,6]
-  // let a=2;
+  // let a=10;
   // let b=0;
   // let sum=studentsAge[a]+studentsAge[b]
   // if(a<studentsAge.length && b<studentsAge.length ){
@@ -224,19 +230,20 @@ let newArr = numbers.map((item)=>item===)
   // }
   //  else{
   //  console.log("nooo")
+  //  }
    
   
 
- // let sum = studentsAge[a] + studentsAge[b];
- // if(sum < students.length){
-  // console.log("student is:",students[sum]);  }
- // else{
-   // console.log("authentical failed") }
+//  let sum = studentsAge[a] + studentsAge[b];
+//  if(sum < students.length){
+//   console.log("student is:",students[sum]);  }
+//  else{
+//    console.log("authentical failed") }
  
 
 
 //console.log("firstname" +" " +"secondname");
 //console.log("welcome to my page from javascript file")
 //console.log("2+2")
-//console.log("4")
+//console.log("4");
 //console.log("edith")
